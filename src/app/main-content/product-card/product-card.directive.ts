@@ -67,11 +67,12 @@ picChange(arrow: string) {
   @HostListener('mouseleave') hoverOut() {
     this.card = 'productPic';
     let leftCardButton = this.elRef.nativeElement.childNodes[0]
-    console.log(this.elRef.nativeElement.childNodes[0]);
     let rightCardButton = this.elRef.nativeElement.childNodes[1];
     this.renderer.removeChild(this.elRef.nativeElement, leftCardButton)
     this.renderer.removeChild(this.elRef.nativeElement, rightCardButton);
-    
+    this.renderer.setStyle(this.elRef.nativeElement, 'background-image',
+      `url("assets/pictures/Product${this.elRef.nativeElement.id}.jpg")`
+    );
    
   }
 
