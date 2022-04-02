@@ -1,0 +1,22 @@
+<div class="container-fluid">
+<div *ngFor="let prop of products | filter: selectedCategory: sortSelector; let i = index" class="products">
+    <div appProductCard 
+    style= "background-image: url({{prop.image}});" 
+    class="productPic" id="{{prop.productId-1}}">
+    </div>
+ 
+       
+            <!-- <button class="left-button pull-left">Click me</button>
+            <button class="right-button pull-right">Click me</button>
+        -->
+
+    <div class="row">
+        {{prop.description}}
+    </div>
+    <div class="row">
+        ${{prop.price}}
+    </div>
+
+ </div>
+
+</div>

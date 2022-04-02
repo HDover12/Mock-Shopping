@@ -1,0 +1,21 @@
+.headerPic {
+    width: 100vw;
+
+
+    transform: translate(0%, -15%);
+}
+
+h1 {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 30%;
+    color: white;
+    font-size: 65px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.heading {
+    padding: 0;
+    position: relative;
+}

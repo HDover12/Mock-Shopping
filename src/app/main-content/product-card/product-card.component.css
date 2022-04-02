@@ -1,0 +1,81 @@
+.products {
+    display: inline-block;
+    margin: 10px;
+   position: relative;
+}
+
+.productPic {
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: 0px 0px 7px 2px black;
+  position: relative;
+  z-index: 1;
+}
+
+.row {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.testClass {
+    width: 300px;
+  height: 400px;
+  background-size: 350px;
+  border-radius: 4px;
+  border: 8px double rgba(0, 0, 0, 0.505);
+  box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.705);
+  position: relative;
+  z-index: 2;
+  transform: scale(1.6);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 360px, 0px, 0px;
+}
+
+
+.zoomPic {
+  width: 400px;
+  height: 500px;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+    border-radius: 4px;
+  box-shadow: 0px 0px 7px 2px black;
+top: -445px;
+}
+
+
+
+.right-button {
+right: 0;
+
+}
+
+.right-button::after {
+right: 0;
+content: '\226B';
+text-shadow: 2px 1px 2px black;
+}
+
+
+.left-button::after {
+content: '\226A';
+text-shadow: 2px 1px 2px black;
+}
+
+.left-button, .right-button {
+  position: absolute;
+  top: 50%;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  color: white;
+  transform: scaleY(1.8);
+}
+
+.left-button:hover, .right-button:hover {
+  transform: scale(1.2);
+} 

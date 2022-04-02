@@ -1,0 +1,17 @@
+.row {
+    text-align: center;
+    background-color: antiquewhite;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 1px rgb(160, 143, 122);
+}
+
+.row:hover {
+    transform: scale(1.1)
+}
+
+.title {
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+}
